@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.malf.upp.mapper.TaskTagRuleMapper">
+
+
+    <select id="getTaskTagRuleByTaskId" resultType="com.malf.upp.bean.TaskTagRule">
+        select * from task_tag_rule where task_id = #{taskId}
+    </select>
+
+</mapper>
